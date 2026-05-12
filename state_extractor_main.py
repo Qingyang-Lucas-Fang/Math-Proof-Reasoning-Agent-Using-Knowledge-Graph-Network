@@ -38,7 +38,7 @@ PROMPT_TEMPLATE = (
 
 
 def _get_api_key() -> str:
-    key = DEEPSEEK_API_KEY.strip() or os.environ.get("DEEPSEEK_API_KEY", "sk-aaaa40fe4d7a49868d4f2f5e662cddcf")
+    key = DEEPSEEK_API_KEY.strip() or os.environ.get("DEEPSEEK_API_KEY", "insert-your-deepseek-api-key-here")
     if not key:
         print("Error: no DeepSeek API key found.", file=sys.stderr)
         print("  Option 1: set DEEPSEEK_API_KEY in this file (line ~17)", file=sys.stderr)
